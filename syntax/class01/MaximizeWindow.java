@@ -8,8 +8,8 @@ public class MaximizeWindow {
 
     public static void main(String[] args) {
 
-         WebDriverManager.chromedriver().setup();
-        WebDriver driver =new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
         driver.navigate().to("http://facebook.com");
         driver.manage().window().maximize();
         //driver.manage().window().fullscreen();

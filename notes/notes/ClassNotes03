@@ -18,17 +18,13 @@ Relative Xpath -->  starts from any node from html
 
 Syntax for relative xpath:
 //tagname[@attribute = 'attribute value']
-
 Example: //input[@id = 'email']
 
 Identifying element by relative xpath using text:
 //tagname[text() = 'text value']
-
 example: //a[text() = 'Fashion']
-
 Contains: will identify an element with a partial attribute value
 //tagname[contains(@attribute, 'partial attribute value')]
-
 example: //input[contains(@placeholder, 'Email')]
         //a[contains(text(), 'Create New')]
 
