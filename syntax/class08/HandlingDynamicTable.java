@@ -30,7 +30,7 @@ public class HandlingDynamicTable {
             if(rowText.contains("FamilyAlbum")) {
                 List<WebElement> checkboxes = driver.findElements(By.xpath("//table[@id = 'ctl00_MainContent_orderGrid']/tbody/tr/td[1]"));
                 checkboxes.get(i-1).click();
-                //break;
+                break;
             }
         }
     }

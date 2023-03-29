@@ -17,8 +17,8 @@ public class FileUpload {
         uploadFile.click();
        WebElement ChooseFile=driver.findElement(By.id("file-upload"));
        ChooseFile.sendKeys("C:/Users/rasik/Downloads/pic.JPG");
-       WebElement submit=driver.findElement(By.id("file-submit"));
-       submit.click();
+       //WebElement submit=driver.findElement(By.id("file-submit"));
+       //submit.click();
 //        WebElement fileUploadLink = driver.findElement(By.linkText("File Upload"));
 //        fileUploadLink.click();
 //

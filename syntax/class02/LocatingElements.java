@@ -11,7 +11,7 @@ public class LocatingElements {
         WebDriverManager.chromedriver().setup();
         WebDriver driver =new ChromeDriver();
         driver.get("http://facebook.com");
-        driver.findElement(By.id("email")).sendKeys("syntax");
+        driver.findElement(By.id("email")).sendKeys("");
         driver.findElement(By.id("pass")).sendKeys("syntax123");
         driver.findElement(By.name("login")).click();
         Thread.sleep(1000);

@@ -1,6 +1,7 @@
 package Grue99Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +11,7 @@ public class DeleteCustomer {
 
     public static String url = "http://www.demo.guru99.com/V4/";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get(url);
@@ -21,6 +22,7 @@ public class DeleteCustomer {
         WebElement Password = driver.findElement(By.cssSelector("[name='password']"));
         Password.sendKeys("sYdEtah");
         driver.findElement(By.xpath("//input[@type='submit']")).click();
+
         driver.findElement(By.linkText("Delete Customer")).click();
         driver.findElement(By.xpath("//input[@name='cusid']")).sendKeys("khadija");
         driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[7]/td[2]/input[1]")).click();

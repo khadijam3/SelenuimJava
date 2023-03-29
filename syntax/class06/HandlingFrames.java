@@ -18,9 +18,9 @@ public class HandlingFrames {
         WebElement textBox = driver.findElement(By.id("name"));
         textBox.sendKeys("Covid sucks");
 
-        driver.switchTo().defaultContent();
-//        WebElement alertButton = driver.findElement(By.id("alert"));
-//        alertButton.click();
+       // driver.switchTo().defaultContent();
+        WebElement alertButton = driver.findElement(By.id("alert"));
+        alertButton.click();
 
         driver.switchTo().frame("iframe_a");
         textBox.clear();

@@ -17,6 +17,7 @@ public class WebOrdersTask {
         driver.findElement(By.name("ctl00$MainContent$password")).sendKeys("test");
         driver.findElement(By.className("button")).click();
         String title = driver.getTitle();
+        System.out.println(title);
         if(title.equalsIgnoreCase("web orders")) {
             System.out.println("Title is Correct");
         } else {

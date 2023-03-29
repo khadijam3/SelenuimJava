@@ -16,15 +16,21 @@ public class AmazonDDHandling {
 
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver =new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.get(url);
-        WebElement categoriesDD = driver.findElement(By.id("searchDropdownBox"));
+       WebElement categoriesDD = driver.findElement(By.id("searchDropdownBox"));
+
+
+
+
         Select select = new Select(categoriesDD);
 
+       // select.selectByVisibleText("Amazon Fresh");
+       // driver.findElement(By.xpath("//input[@id='nav-search-submit-button']")).click();
         List<WebElement> options = select.getOptions();
-        for(WebElement option: options) {
+        for (WebElement option : options) {
             String optionText = option.getText();
-            System.out.println(optionText);
+           System.out.println(optionText);
 
         }
 

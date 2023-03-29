@@ -16,7 +16,7 @@ public class ImplcitwaitDemo {
         driver.get(url);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        driver.findElement(By.name("q")).sendKeys("Selenium");
+        //driver.findElement(By.name("q")).sendKeys("Selenium");
         driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
         driver.findElement(By.xpath("//h3[text()='Selenium']")).click();
 

@@ -13,12 +13,13 @@ public class Task1 {
      */
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver =new ChromeDriver();
+        WebDriver driver= new ChromeDriver();
         driver.get("https://amazon.com");
-        String title = driver.getTitle();
-        String url = driver.getCurrentUrl();
-        System.out.println(url + " " + title);
+        String Title=driver.getTitle();
+        String url= driver.getCurrentUrl();
+        System.out.println(url+""+Title);
         driver.quit();
+
     }
 
 }

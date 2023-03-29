@@ -1,11 +1,10 @@
 package syntax.class11;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.security.Key;
 
 public class JsExecutorDemo3 {
 
@@ -19,6 +18,7 @@ public class JsExecutorDemo3 {
         js.executeScript("window.open();");
         WebElement searchbtn=driver.findElement(By.name("q"));
         searchbtn.sendKeys("khadija54");
+
 
 
 

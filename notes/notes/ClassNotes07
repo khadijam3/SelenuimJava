@@ -1,3 +1,4 @@
+
 Class 7
 
 Handling multiple windows:
@@ -21,7 +22,7 @@ Explicit
 Fluent
 
 Implicit Wait:
-it tells the wedriver to wait for a certain amount of time before throwing an exception
+it tells the wedrive-r to wait for a certain amount of time before throwing an exception
 it will be written only once and will be applied for the whole session of the execution
 We can say the implicit wait is a global wait
 

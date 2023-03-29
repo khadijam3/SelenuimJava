@@ -20,11 +20,6 @@ public class Recap {
             System.out.println("Title is WRONG ");
         }
         driver.quit();
-//        if(title.equalsIgnoreCase("Facebook-Log In or Sign up")){
-//            System.out.println("Title is RIGHT");
-//        } else {
-//            System.out.println("Title is WRONG ");
-//        }
-//        driver.quit();
+
     }
 }

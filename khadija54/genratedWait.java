@@ -17,7 +17,7 @@ public class genratedWait {
         driver.get("https://www.google.com");
         driver.manage().window().maximize();
         WebDriverWait mywait=new WebDriverWait(driver,5);
-
+       driver.findElement(By.tagName("iframe")).getSize();
         driver.findElement(By.name("q")).sendKeys("Selenium");
         driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
         By elelocator =By.xpath("//h3[text()='Selenium']");
